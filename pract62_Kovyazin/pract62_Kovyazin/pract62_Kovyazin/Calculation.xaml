@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract62_Kovyazin.Calculation"
+             BackgroundColor="Bisque">
+    <ContentPage.Resources>
+        <StyleSheet Source="/style.css" />
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+
+            <Label Text="Расчет суммы"   HorizontalOptions="Center" FontSize="25" StyleClass="labelnew" ></Label>
+            <Label x:Name="price" StyleClass="label" ></Label>
+            <Entry x:Name="srok" Placeholder="Введите срок от 1 до 20" StyleClass="logpass"></Entry>
+            
+            <Picker Title="Вид оплаты" x:Name="picker" Margin="0,0,0,0" SelectedIndex="0">
+                <Picker.Items>
+                    <x:String>Наличный</x:String>
+                    <x:String>Безналичный</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label x:Name="sum" StyleClass="label" ></Label>
+            
+            <Button x:Name="raschet" Text="Расчитать" Clicked="raschet_Clicked" HorizontalOptions="Center"></Button>
+            <StackLayout Orientation="Vertical">
+                <Button Text="Просмотр информации по объекту недвижимости" Clicked="Button_Clicked"></Button>
+                <Button Text="Вернуться на главную страницу" Clicked="Button_Clicked_1"></Button>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

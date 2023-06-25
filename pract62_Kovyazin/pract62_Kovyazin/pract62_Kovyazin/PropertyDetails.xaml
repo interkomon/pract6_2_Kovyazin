@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract62_Kovyazin.PropertyDetails">
+
+    <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+        <Label Text="Информация по объектам недвижимости" HorizontalOptions="Center" StyleClass="labelnew" FontSize="25"></Label>
+        <Image x:Name="kvimg" StyleClass="label" ></Image>
+        <Label x:Name="NameV" StyleClass="label" ></Label>
+        <Label x:Name="addres" StyleClass="label" ></Label>
+        <Label x:Name="Charecterist" StyleClass="label" ></Label>
+        <Label x:Name="areaa" StyleClass="label" ></Label>
+        <Label x:Name="kolvokomnat" StyleClass="label" ></Label>
+        <Label x:Name="chena" StyleClass="label" ></Label>
+        <Label x:Name="etaj" StyleClass="label" ></Label>
+        <DatePicker x:Name="date" Margin="250,0,50,0" TextColor="Red" FontAttributes="Italic" >
+        </DatePicker>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Расчет суммы оплаты" Clicked="Button_Clicked" ></Button>
+            <Button Text="Вернуться назад" Clicked="Button_Clicked_1"></Button>
+        </StackLayout>
+    </StackLayout>
+    
+    
+</ContentPage>

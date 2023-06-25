@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract62_Kovyazin.ListOfProperties"
+             BackgroundColor="Bisque">
+    <ContentPage.Resources>
+        <StyleSheet Source="/style.css" />
+    </ContentPage.Resources>
+
+    
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label
+                        Text="Онлайн-агентство недвижимости"
+                        StyleClass="labelnew"
+                        FontSize = "24"
+                        >
+                    </Label>
+
+                </StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    
+                    <StackLayout Grid.Column="0" Grid.Row="0">
+                        <Image x:Name="kv1" Source="kv1" Margin="10,10,10,0" />
+                        <Label x:Name="lkv1" Text="9-комн. квартира, 140000000" Margin="10,0,0,0" FontAttributes="Bold,Italic" TextColor="Black" FontSize="20"/>
+                        <RadioButton x:Name="rad1" CheckedChanged="rad1_CheckedChanged"></RadioButton>
+                        
+                        
+                    </StackLayout>
+                    <StackLayout  Grid.Column="1" Grid.Row="0">
+                        <Image x:Name="kv2" Source="kv2" Margin="10,10,10,0" />
+                        <Label x:Name="lkv2" Text="2-комн. квартира, 5000000" Margin="5,0,0,0" FontAttributes="Bold,Italic" TextColor="Black" FontSize="20"/>
+                        <RadioButton x:Name="rad2" CheckedChanged="rad2_CheckedChanged"></RadioButton>
+                       
+                       
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="1">
+                        <Image x:Name="kv3" Source="kv3" Margin="10,-50,10,0"  />
+                        <Label x:Name="lkv3" Text="3-комн. квартира, 7000000" Margin="10,0,0,0" FontAttributes="Bold,Italic" TextColor="Black" FontSize="20"/>
+                        <RadioButton x:Name="rad3" CheckedChanged="rad3_CheckedChanged"></RadioButton>
+                       
+                        
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" Grid.Row="1">
+                        <Image x:Name="kv4" Source="kv4" Margin="10,-50,10,0"  />
+                        <Label x:Name="lkv4" Text="5-комн. квартира, 30000000" Margin="0,0,0,0" FontAttributes="Bold,Italic" TextColor="Black" FontSize="20"/>
+                        <RadioButton x:Name="rad4" CheckedChanged="rad4_CheckedChanged" Margin="0,0,0,0" ></RadioButton>
+                      
+                       
+                    </StackLayout>
+                    
+
+                    
+                </Grid>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button
+                Text = "Просмотр информации по объекту недвижимости"
+                TextColor = "Color.Black"
+                BackgroundColor = "Yellow"
+                 WidthRequest = "200"
+                HeightRequest = "70"
+                
+                 Clicked="Button_Clicked"
+                       >
+                        
+                    </Button>
+                    <Button
+                Text = "Расчет стоимости покупки недвижимости"
+                TextColor = "Color.Black"
+                BackgroundColor = "Yellow"
+                        WidthRequest = "200"
+                HeightRequest = "70"
+                
+                        Clicked="Button_Clicked_1">
+                        
+                    </Button>
+                </StackLayout>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
